@@ -6,22 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1,firefox=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> O mnie </title>
+    <title> Strona Główna </title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
     <link rel="stylesheet" href="projekt.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(
+            function () {
+                $("#mem").hover(
+                    function () {
+                        $("#opis").show(200);
+                    },
+                    function () {
+                        $("#opis").hide(200);
+                    });
+            });
+    </script>
 
 </head>
 
 <body>
 
     <main>
-        
+
         <header>
 
             <nav class="navbar navbar-dark bg-topka navbar-expand-lg">
-                <a class="navbar-brand" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="images/logo.png" width="140"
-                        height="70" class="d-inline-block mr-2 align-middle" alt=""> miejsce na logo :P</a>
+                <a class="navbar-brand" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img
+                        src="images/logo.png" width="140" height="70" class="d-inline-block mr-2 align-middle" alt="">
+                    miejsce na logo :P</a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
                     aria-controls="mainmenu" aria-expanded="false" aria-label="przełącznik nawigacji">
@@ -36,7 +50,8 @@
                         <li class="btn btn-primary" class="nav-item"><a class="nav-link" href="BMI.html">BMI</a></li>
                         <li class="btn btn-primary" class="nav-item"><a class="nav-link" href="podstrona2.html">podstrona2</a></li>
                         <li class="btn btn-primary" class="nav-item"><a class="nav-link" href="Pogoda.html">Pogoda</a></li>
-                        <li class="btn btn-primary" class="nav-item"><a class="nav-link active" href="O_mnie.html">O mnie</a></li>
+                        <li class="btn btn-primary" class="nav-item"><a class="nav-link active" href="O_mnie.html">O mnie</a>
+                        </li>
 
                     </ul>
 
@@ -50,10 +65,9 @@
 
             <div class="container">
 
-                <header>
+                <header class="glowa">
 
-                    <h1>Witam na mojej stronce!!</h1>
-                    <p>Tutaj zaprezentuje swoje umiejętności w tworzeniu stron WWW sooo stay tuned :D</p>
+                    <h1>O mnie</h1>
 
                 </header>
 
@@ -61,8 +75,22 @@
 
                     <div class="col-sm-6">
 
+                        <p class="text"> Jak sama nazwa wskazuje ta podstroan dedykowana jest podstawowym informacją o
+                            mojej skromnej osobie :D</p>
+                        <p class="text"> robiąc stronke chcciałem żeby osoba która na nią wejdzie choć troche sie
+                            uśmiechnęła </p>
+                        <p class="text">Poza tym chciałem tylko zaznaczyć, że z programowaniem stron WWW mam doczynienia poraz
+                            pierwszy wiec mam nadzieje, że podołałem </p>
+                        <p class="text">W stopce ma pan informacje jaki jest mój nr indeksu oraz jaką mam nazwę użytkownika na naszym wydziale  </p>
+
                     </div>
 
+                    <div class="col-sm-6">
+
+                        <img SRC="images/funny-laughing.gif" class="img-fluid" id="mem">
+                        <figcaption id="opis"> wole psy od kotów </figcaption>
+
+                    </div>
 
                 </div>
 
@@ -74,7 +102,7 @@
 
     <footer class="stopka">
 
-        <p> Kacper Falkiewicz Nr.indeksu 313003 </p>
+        <p> Kacper 'falken' Falkiewicz Nr.indeksu 313003 </p>
 
     </footer>
 

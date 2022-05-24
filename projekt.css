@@ -1,8 +1,7 @@
-body 
-{ 
+body {
     margin-left: auto;
     margin-right: auto;
-    background-color:lightblue;
+    background-color: lightblue;
     background-image: url(images/corndog-tile-1.png), url(images/corndog-tile.png), url(images/corndog-tile-2.png);
     height: 100%;
     width: 100%;
@@ -11,41 +10,64 @@ body
     -moz-animation: ruch 1000s linear infinite;
     -ms-animation: ruch 1000s linear infinite;
     animation: ruch 1000s linear infinite;
-    -webkit-transform: translate3d(0,0,0);
-    -moz-transform: translate3d(0,0,0);
-    -ms-transform: translate3d(0,0,0);
-    -o-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    font-family: "AvanteGarde";
+    color: white;
 }
-.navbar
-{
+.text {
+    font-style: Sans-serif;
+}
+.glowa {
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+.row {
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+.navbar {
     min-height: 57px;
 }
-.nav-item
-{
+
+.nav-item {
     margin-left: 20px;
     margin-right: 20px;
 }
-.btn-primary
-{
+
+.btn-primary {
     background-color: rgb(15, 175, 228) !important;
-    border-color:black;
+    border-color: black;
 }
-.btn-primary:hover
-{
+
+.btn-primary:hover {
     background-color: rgb(29, 223, 49) !important;
-    border-color:black;
+    border-color: black;
 }
-.bg-topka
-{
+
+.bg-topka {
     background-color: rgb(0, 0, 0, 0.8);
     font-size: medium;
     text-align: left;
-    color: white;
     font-size: larger;
 }
-.stopka
-{
+.text {
+
+    text-align: center;
+    margin-top: 25px;
+}
+.stopka {
     position: absolute;
     width: 100%;
     background-color: rgb(0, 0, 0, 0.8);
@@ -53,27 +75,45 @@ body
     height: 50px;
     padding-top: 15px;
     text-align: center;
-    font-family: "AvanteGarde";
-    color: white;
 }
+
 /* animacja */
-@keyframes ruch 
-{
-    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-    100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+@keyframes ruch {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+
+    100% {
+        background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;
+    }
 }
-@-moz-keyframes ruch 
-{
-    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-    100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+
+@-moz-keyframes ruch {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+
+    100% {
+        background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;
+    }
 }
-@-webkit-keyframes ruch 
-{
-    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-    100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+
+@-webkit-keyframes ruch {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+
+    100% {
+        background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;
+    }
 }
-@-ms-keyframes ruch 
-{
-    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-    100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
-}   
+
+@-ms-keyframes ruch {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+
+    100% {
+        background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;
+    }
+}
