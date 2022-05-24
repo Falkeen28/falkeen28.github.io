@@ -2,11 +2,11 @@ body
 { 
     margin-left: auto;
     margin-right: auto;
-    background-color:lightBlue; 
+    background-color:lightblue;
     background-image: url(corndog-tile-1.png), url(corndog-tile.png), url(corndog-tile-2.png);
     height: 100%;
     width: 100%;
-    position:absolute;
+    position: absolute;
     -webkit-animation: ruch 1000s linear infinite;
     -moz-animation: ruch 1000s linear infinite;
     -ms-animation: ruch 1000s linear infinite;
@@ -16,78 +16,45 @@ body
     -ms-transform: translate3d(0,0,0);
     -o-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
-    font-family: 'Baloo 2', cursive;
-    font-style: bold;
 }
-a:link
+.navbar
 {
-    color: white;
+    min-height: 57px;
 }
-a:visited
+.nav-item
 {
-    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-a:hover
+.btn-primary
 {
-    color: red;
+    background-color: rgb(15, 175, 228) !important;
+    border-color:black;
 }
-#topmenu
+.btn-primary:hover
 {
-    font-size: medium;
-    text-align: right;
+    background-color: rgb(29, 223, 49) !important;
+    border-color:black;
+}
+.bg-topka
+{
     background-color: rgb(0, 0, 0, 0.8);
-    color: white;
-    padding: 15px;
-}
-#topmenu li
-{
-    display: inline;
-    font-size: medium;
-    text-align: right;
-    color: white;
-    padding: 15px;
-}
-#header
-{
     font-size: medium;
     text-align: left;
     color: white;
     font-size: larger;
 }
-#left_border
+.stopka
 {
-    float: left;
-    border: 5px solid rgba(0, 0, 0, 0);
-    text-align: center;
-    width: 15%;
-    min-height: 800px;
-}
-#content
-{
-    float: left;
-    width: 65%;
-    text-align: center;
-    min-height: 800px;
-    padding: 20px;
-    font-size: large;
-    font-weight: bold;
-}
-#right_border
-{
-    float: left;
-    border: 5px solid rgba(0, 0, 0, 0);
-    text-align: center;
-    width: 15%;
-    min-height: 800px;
-}
-#stopka
-{
-    clear: both;
-    width: 98%;
+    position: absolute;
+    width: 100%;
     background-color: rgb(0, 0, 0, 0.8);
-    color: white;
-    padding: 12px;
+    bottom: 0;
+    height: 50px;
+    padding-top: 15px;
     text-align: center;
+    font-family: "AvanteGarde";
+    color: white;
 }
 /* animacja */
 @keyframes ruch 
