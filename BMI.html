@@ -12,15 +12,25 @@
     <script src="js/BMI.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script> $(document).ready(
-        function () {
-            $("#mem").hover(
-                function () {
-                    $("#opis").show(200);
-                },
-                function () {
-                    $("#opis").hide(200);
-                });
-        });</script>
+            function () {
+                $("#mem").hover(
+                    function () {
+                        $("#opis").show(200);
+                    },
+                    function () {
+                        $("#opis").hide(200);
+                    });
+            });</script>
+    <script>
+        if (document.images){
+        var obrazek1 = new Image;
+        var obrazek2 = new Image;
+        var obrazek3 = new Image;
+        obrazek1.src = "images/obrazek.png";
+        obrazek2.src = "images/obrazek3.png";
+        obrazek3.src = "images/obrazek4.png";
+        }
+    </script>
 
 </head>
 
@@ -44,11 +54,13 @@
 
                     <ul class="navbar-nav ml-auto">
 
+                        
                         <li class="btn btn-primary" class="nav-item"><a class="nav-link" href="index.html">Główna</a></li>
                         <li class="btn btn-primary" class="nav-item"><a class="nav-link active" href="BMI.html">BMI</a></li>
-                        <li class="btn btn-primary" class="nav-item"><a class="nav-link" href="podstrona2.html">podstrona2</a></li>
+                        <li class="btn btn-primary" class="nav-item"><a class="nav-link" href="Mail.html">Mail</a></li>
                         <li class="btn btn-primary" class="nav-item"><a class="nav-link" href="Pogoda.html">Pogoda</a></li>
                         <li class="btn btn-primary" class="nav-item"><a class="nav-link" href="O_mnie.html">O mnie</a></li>
+
 
                     </ul>
 
@@ -72,12 +84,14 @@
 
                     <div class="col-sm-6">
 
-                        <h3>Oblicz BMI</h3>
+                        <h3 class="text">Oblicz BMI</h3>
                         <form name="formularz">
-                            <p>Waga [kg]:<input type="text" id="waga"> </p>
-                            <p>Wzrost [m]<input type="text" id="wzrost"> </p>
-                            <p id="odpowiedz"></p>
+                            <p class="text">Waga [kg]:<input type="text" id="waga"> </p>
+                            <p class="text">Wzrost [m]<input type="text" id="wzrost"> </p>
+                            <p id="odpowiedz" class="text"></p>
                             <input type="button" value="Oblicz" onclick="oblicz()">
+                            <p id="obrazek"><img src="images/obrazek.png" width="240" height="1240" class="img-fluid"></p>
+
                         </form>
 
                     </div>
@@ -90,11 +104,9 @@
 
                     </div>
 
-                    <div class="col-sm-6">
+                </div>
 
-
-
-                    </div>
+                <div class="col-sm-6 fill">
 
                 </div>
 
