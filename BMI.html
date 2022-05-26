@@ -20,111 +20,65 @@
                     function () {
                         $("#opis").hide(200);
                     });
-            });</script>
-    <script>
-        if (document.images){
-        var obrazek1 = new Image;
-        var obrazek2 = new Image;
-        var obrazek3 = new Image;
-        obrazek1.src = "images/obrazek.png";
-        obrazek2.src = "images/obrazek3.png";
-        obrazek3.src = "images/obrazek4.png";
-        }
+            });
     </script>
-
 </head>
 
 <body>
-
     <main>
-
         <header>
-
             <nav class="navbar navbar-dark bg-topka navbar-expand-lg">
                 <a class="navbar-brand" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img
                         src="images/logo.png" width="140" height="70" class="d-inline-block mr-2 align-middle" alt="">
                     miejsce na logo :P</a>
-
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
                     aria-controls="mainmenu" aria-expanded="false" aria-label="przełącznik nawigacji">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="mainmenu">
-
                     <ul class="navbar-nav ml-auto">
-
-                        
                         <li class="btn btn-primary" class="nav-item"><a class="nav-link" href="index.html">Główna</a></li>
                         <li class="btn btn-primary" class="nav-item"><a class="nav-link active" href="BMI.html">BMI</a></li>
                         <li class="btn btn-primary" class="nav-item"><a class="nav-link" href="Mail.html">Mail</a></li>
                         <li class="btn btn-primary" class="nav-item"><a class="nav-link" href="Pogoda.html">Pogoda</a></li>
                         <li class="btn btn-primary" class="nav-item"><a class="nav-link" href="O_mnie.html">O mnie</a></li>
-
-
                     </ul>
-
                 </div>
-
             </nav>
-
         </header>
-
         <section>
-
             <div class="container">
-
                 <header class="glowa">
-
                     <h1>Kalkulator BMI</h1>
-
                 </header>
-
                 <div class="row">
-
                     <div class="col-sm-6">
-
                         <h3 class="text">Oblicz BMI</h3>
                         <form name="formularz">
                             <p class="text">Waga [kg]:<input type="text" id="waga"> </p>
                             <p class="text">Wzrost [m]<input type="text" id="wzrost"> </p>
                             <p id="odpowiedz" class="text"></p>
                             <input type="button" value="Oblicz" onclick="oblicz()">
-                            <p id="obrazek"><img src="images/obrazek.png" width="240" height="1240" class="img-fluid"></p>
-
+                            <div id="obrazek"><img src="images/obrazek.png" width="240" height="1240" class="img-fluid">
+                            </div>
                         </form>
-
                     </div>
-
                     <div class="col-sm-6">
-
                         <img src="images/tabela.png" class="img-fluid" id="mem">
                         <br>
                         <figcaption id="opis"> tabela BMI </figcaption>
-
                     </div>
-
                 </div>
-
                 <div class="col-sm-6 fill">
-
                 </div>
-
             </div>
-
         </section>
-
     </main>
-
     <footer class="stopka">
-
         <p> Kacper 'falken' Falkiewicz Nr.indeksu 313003 </p>
-
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
-
 </body>
 
 </html>
